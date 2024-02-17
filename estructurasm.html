@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructuras de Selección en C++</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Estructuras de Selección en C++</h1>
+
+        <!-- Descripción -->
+        <div class="card my-3">
+            <div class="card-body">
+                <h2>Descripción</h2>
+                <p>Las estructuras de selección en C++ permiten tomar decisiones basadas en ciertas condiciones. Las estructuras más comunes son <code>if</code>, <code>else if</code> y <code>else</code>.</p>
+            </div>
+        </div>
+
+        <!-- Estructura if -->
+        <div class="card my-3">
+            <div class="card-body">
+                <h2>Estructura if</h2>
+                <p>La estructura <code>if</code> permite ejecutar un bloque de código si una condición es verdadera.</p>
+                <pre><code class="language-cpp">// Ejemplo de estructura if
+int edad = 20;
+if (edad &gt;= 18) {
+    std::cout &lt;&lt; "Eres mayor de edad." &lt;&lt; std::endl;
+}</code></pre>
+            </div>
+        </div>
+
+        <!-- Estructura if...else -->
+        <div class="card my-3">
+            <div class="card-body">
+                <h2>Estructura if...else</h2>
+                <p>La estructura <code>if...else</code> permite ejecutar un bloque de código si una condición es verdadera y otro bloque de código si la condición es falsa.</p>
+                <pre><code class="language-cpp">// Ejemplo de estructura if...else
+int numero = -5;
+if (numero &gt; 0) {
+    std::cout &lt;&lt; "El número es positivo." &lt;&lt; std::endl;
+} else {
+    std::cout &lt;&lt; "El número es negativo o cero." &lt;&lt; std::endl;
+}</code></pre>
+            </div>
+        </div>
+
+        <!-- Estructura if...else if...else -->
+        <div class="card my-3">
+            <div class="card-body">
+                <h2>Estructura if...else if...else</h2>
+                <p>La estructura <code>if...else if...else</code> permite evaluar múltiples condiciones en orden y ejecutar un bloque de código correspondiente a la primera condición verdadera encontrada.</p>
+                <pre><code class="language-cpp">// Ejemplo de estructura if...else if...else
+int nota = 75;
+if (nota &gt;= 90) {
+    std::cout &lt;&lt; "Sobresaliente." &lt;&lt; std::endl;
+} else if (nota &gt;= 80) {
+    std::cout &lt;&lt; "Notable." &lt;&lt; std::endl;
+} else if (nota &gt;= 70) {
+    std::cout &lt;&lt; "Aprobado." &lt;&lt; std::endl;
+} else {
+    std::cout &lt;&lt; "Reprobado." &lt;&lt; std::endl;
+}</code></pre>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

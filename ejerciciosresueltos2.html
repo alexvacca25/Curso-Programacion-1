@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios Resueltos en C++</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Estilos personalizados -->
+    
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Ejercicios Resueltos en C++</h1>
+
+        <!-- Ejercicio 1 -->
+        <div class="card my-3">
+            <div class="card-body">
+                <h2>Ejercicio 1: Números Pares e Impares</h2>
+                <p>Escribe un programa que solicite al usuario un número entero positivo y luego imprima todos los números pares e impares desde 1 hasta el número ingresado.</p>
+                <pre><code class="language-cpp">// Ejercicio 1: Números Pares e Impares
+#include &lt;iostream&gt;
+
+int main() {
+    int numero;
+    std::cout &lt;&lt; "Ingrese un número entero positivo: ";
+    std::cin &gt;&gt; numero;
+
+    std::cout &lt;&lt; "Números pares hasta " &lt;&lt; numero &lt;&lt; ": ";
+    for (int i = 1; i &lt;= numero; ++i) {
+        if (i % 2 == 0) {
+            std::cout &lt;&lt; i &lt;&lt; " ";
+        }
+    }
+    std::cout &lt;&lt; std::endl;
+
+    std::cout &lt;&lt; "Números impares hasta " &lt;&lt; numero &lt;&lt; ": ";
+    for (int i = 1; i &lt;= numero; ++i) {
+        if (i % 2 != 0) {
+            std::cout &lt;&lt; i &lt;&lt; " ";
+        }
+    }
+    std::cout &lt;&lt; std::endl;
+
+    return 0;
+}</code></pre>
+            </div>
+        </div>
+
+        <!-- Ejercicio 2 -->
+        <div class="card my-3">
+            <div class="card-body">
+                <h2>Ejercicio 2: Suma de Números</h2>
+                <p>Escribe un programa que solicite al usuario números enteros positivos y calcule la suma total. El programa debe detenerse cuando el usuario ingrese un número negativo y mostrar la suma de los números ingresados hasta ese momento.</p>
+                <pre><code class="language-cpp">// Ejercicio 2: Suma de Números
+#include &lt;iostream&gt;
+
+int main() {
+    int numero, suma = 0;
+    std::cout &lt;&lt; "Ingrese números enteros positivos (ingrese un número negativo para terminar): ";
+    while (true) {
+        std::cin &gt;&gt; numero;
+        if (numero &lt; 0) {
+            break;
+        }
+        suma += numero;
+    }
+    std::cout &lt;&lt; "La suma de los números ingresados es: " &lt;&lt; suma &lt;&lt; std::endl;
+
+    return 0;
+}</code></pre>
+            </div>
+        </div>
+
+        <!-- Ejercicio 3 -->
+        <div class="card my-3">
+            <div class="card-body">
+                <h2>Ejercicio 3: Números Primos</h2>
+                <p>Escribe un programa que solicite al usuario un número entero positivo y determine si es un número primo o no. Un número primo es aquel que es divisible solo por 1 y por sí mismo.</p>
+                <pre><code class="language-cpp">// Ejercicio 3: Números Primos
+#include &lt;iostream&gt;
+
+int main() {
+    int numero;
+    bool esPrimo = true;
+
+    std::cout &lt;&lt; "Ingrese un número entero positivo: ";
+    std::cin &gt;&gt; numero;
+
+    if (numero &lt;= 1) {
+        esPrimo = false;
+    } else {
+        for (int i = 2; i &lt;= numero / 2; ++i) {
+            if (numero % i == 0) {
+                esPrimo = false;
+                break;
+            }
+        }
+    }
+
+    if (esPrimo) {
+        std::cout &lt;&lt; numero &lt;&lt; " es un número primo." &lt;&lt; std::endl;
+    } else {
+        std::cout &lt;&lt; numero &lt;&lt; " no es un número primo." &lt;&lt; std::endl;
+    }
+
+    return 0;
+}</code></pre>
+            </div>
+        </div>
+
+        <!-- Ejercicio 4 -->
+        <div class="card my-3">
+            <div class="card-body">
+                <h2>Ejercicio 4: Números Fibonacci</h2>
+                <p>Escribe un programa que genere y muestre los primeros N números de la secuencia de Fibonacci, donde N es un número entero ingresado por el usuario.</p>
+                <pre><code class="language-cpp">// Ejercicio 4: Números Fibonacci
+#include &lt;iostream&gt;
+
+int main() {
+    int n, t1 = 0, t2 = 1, siguiente;
+
+    std::cout &lt;&lt; "Ingrese el número de términos de la secuencia de Fibonacci: ";
+    std::cin &gt;&gt; n;
+
+    std::cout &lt;&lt; "Secuencia de Fibonacci de " &lt;&lt; n &lt;&lt; " términos: ";
+
+    for (int i = 1; i &lt;= n; ++i) {
+        std::cout &lt;&lt; t1 &lt;&lt; ", ";
+        siguiente = t1 + t2;
+        t1 = t2;
+        t2 = siguiente;
+    }
+
+    return 0;
+}</code></pre>
+            </div>
+        </div>
+
+        <!-- Ejercicio 5 -->
+        <div class="card my-3">
+            <div class="card-body">
+                <h2>Ejercicio 5: Tabla de Multiplicar</h2>
+                <p>Escribe un programa que solicite al usuario un número entero positivo y muestre la tabla de multiplicar de ese número hasta el 10.</p>
+                <pre><code class="language-cpp">// Ejercicio 5: Tabla de Multiplicar
+#include &lt;iostream&gt;
+
+int main() {
+    int numero;
+
+    std::cout &lt;&lt; "Ingrese un número entero positivo: ";
+    std::cin &gt;&gt; numero;
+
+    std::cout &lt;&lt; "Tabla de multiplicar del " &lt;&lt; numero &lt;&lt; ":" &lt;&lt; std::endl;
+    for (int i = 1; i &lt;= 10; ++i) {
+        std::cout &lt;&lt; numero &lt;&lt; " x " &lt;&lt; i &lt;&lt; " = " &lt;&lt; numero * i &lt;&lt; std::endl;
+    }
+
+    return 0;
+}</code></pre>
+            </div>
+        </div>
+
+        <!-- Ejercicio 6 -->
+        <div class="card my-3">
+            <div class="card-body">
+                <h2>Ejercicio 6: Suma de Números Pares</h2>
+                <p>Escribe un programa que calcule la suma de los primeros N números pares. El valor de N es ingresado por el usuario.</p>
+                <pre><code class="language-cpp">// Ejercicio 6: Suma de Números Pares
+#include &lt;iostream&gt;
+
+int main() {
+    int n, suma = 0;
+
+    std::cout &lt;&lt; "Ingrese el número de términos pares a sumar: ";
+    std::cin &gt;&gt; n;
+
+    for (int i = 1; i &lt;= n; ++i) {
+        suma += (2 * i);
+    }
+
+    std::cout &lt;&lt; "La suma de los primeros " &lt;&lt; n &lt;&lt; " números pares es: " &lt;&lt; suma &lt;&lt; std::endl;
+
+    return 0;
+}</code></pre>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bucles en C++</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Bucles en C++</h1>
+
+        <!-- Descripción -->
+        <div class="card my-3">
+            <div class="card-body">
+                <h2>Descripción</h2>
+                <p>Los bucles en C++ son estructuras de control que permiten repetir un bloque de código varias veces. Los tres bucles más comunes son: <code>for</code>, <code>while</code> y <code>do-while</code>.</p>
+            </div>
+        </div>
+
+        <!-- Bucle for -->
+        <div class="card my-3">
+            <div class="card-body">
+                <h2>Bucle for</h2>
+                <p>El bucle <code>for</code> se utiliza cuando se conoce de antemano el número de iteraciones que se deben realizar.</p>
+                <pre><code class="language-cpp">// Ejemplo de bucle for
+for (int i = 0; i < 5; ++i) {
+    std::cout &lt;&lt; "Iteración " &lt;&lt; i + 1 &lt;&lt; std::endl;
+}</code></pre>
+            </div>
+        </div>
+
+        <!-- Bucle while -->
+        <div class="card my-3">
+            <div class="card-body">
+                <h2>Bucle while</h2>
+                <p>El bucle <code>while</code> se utiliza cuando la condición de terminación no es conocida de antemano y el bloque de código debe ejecutarse mientras la condición sea verdadera.</p>
+                <pre><code class="language-cpp">// Ejemplo de bucle while
+int contador = 0;
+while (contador &lt; 5) {
+    std::cout &lt;&lt; "Iteración " &lt;&lt; contador + 1 &lt;&lt; std::endl;
+    ++contador;
+}</code></pre>
+            </div>
+        </div>
+
+        <!-- Bucle do-while -->
+        <div class="card my-3">
+            <div class="card-body">
+                <h2>Bucle do-while</h2>
+                <p>El bucle <code>do-while</code> es similar al bucle <code>while</code>, pero la condición se evalúa al final del bloque de código, lo que garantiza que el bloque se ejecute al menos una vez.</p>
+                <pre><code class="language-cpp">// Ejemplo de bucle do-while
+int contador = 0;
+do {
+    std::cout &lt;&lt; "Iteración " &lt;&lt; contador + 1 &lt;&lt; std::endl;
+    ++contador;
+} while (contador &lt; 5);</code></pre>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
