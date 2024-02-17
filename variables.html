@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 2: Variables y Tipos de Datos</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Módulo 2: Variables y Tipos de Datos</h1>
+        
+        <!-- Contenido del Módulo 2 -->
+        <div class="card my-3">
+            <div class="card-body">
+                <h2>1. Variables y constantes</h2>
+                <p>En C++, una variable es un espacio de almacenamiento nombrado que puede contener un valor. Las variables pueden tener diferentes tipos de datos, como enteros, flotantes, caracteres, booleanos, entre otros. También exploraremos el concepto de constantes, que son valores que no cambian durante la ejecución del programa.</p>
+            </div>
+        </div>
+
+        <div class="card my-3">
+            <div class="card-body">
+                <h2>2. Tipos de datos básicos</h2>
+                <p>En este apartado, analizaremos los tipos de datos básicos disponibles en C++, incluyendo:</p>
+                <ul>
+                    <li><strong>Enteros:</strong> Representan números enteros, como int, short, long, etc.</li>
+                    <li><strong>Flotantes:</strong> Representan números con parte decimal, como float y double.</li>
+                    <li><strong>Caracteres:</strong> Representan caracteres individuales, como char.</li>
+                    <li><strong>Booleanos:</strong> Representan valores verdadero o falso, como bool.</li>
+                </ul>
+                <p>Explicaremos cómo declarar variables de estos tipos y cómo asignarles valores.</p>
+            </div>
+        </div>
+
+        <div class="card my-3">
+            <div class="card-body">
+                <h2>3. Declaración, asignación y uso de variables</h2>
+                <p>En esta sección, aprenderemos cómo declarar variables en C++, asignarles valores y utilizarlas en expresiones y operaciones. También discutiremos las convenciones de nomenclatura para nombrar variables de manera significativa y descriptiva.</p>
+                <p>Ejemplo:</p>
+                <pre><code class="language-cpp">// Declaración y asignación de una variable
+int edad = 25;
+
+// Uso de la variable en una operación
+int edadDespuesDeDiezAnios = edad + 10;
+
+// Impresión del resultado
+std::cout &lt;&lt; "Edad después de diez años: " &lt;&lt; edadDespuesDeDiezAnios &lt;&lt; std::endl;</code></pre>
+            </div>
+        </div>
+
+        <div class="card my-3">
+            <div class="card-body">
+                <h2>4. Conversión de tipos de datos</h2>
+                <p>A veces necesitamos convertir un tipo de dato en otro. Por ejemplo, convertir un número entero en un número de punto flotante. Exploraremos los diferentes métodos de conversión de tipos de datos en C++ y cómo evitar la pérdida de precisión o la truncación de datos.</p>
+                <p>Ejemplo:</p>
+                <pre><code class="language-cpp">// Conversión de tipos de datos
+int numeroEntero = 10;
+double numeroFlotante = static_cast&lt;double&gt;(numeroEntero);
+std::cout &lt;&lt; "Número flotante: " &lt;&lt; numeroFlotante &lt;&lt; std::endl;</code></pre>
+            </div>
+        </div>
+
+        <div class="card my-3">
+            <div class="card-body">
+                <h2>5. Ejercicios prácticos</h2>
+                <p>Podrías intentar escribir un programa que calcule el área de un círculo utilizando una variable para el radio y otra para el área, o un programa que convierta una temperatura en grados Celsius a Fahrenheit.</p>
+                <a href="ejemplosvariables.html">Ver ejemplos</a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Bootstrap JS (opcional, si necesitas componentes interactivos) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

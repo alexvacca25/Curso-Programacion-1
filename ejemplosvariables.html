@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos de Programación en C++</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Prism CSS para resaltar la sintaxis de código -->
+    <link href="https://cdn.jsdelivr.net/npm/prismjs@1.26.0/themes/prism-okaidia.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Ejemplos de Programación en C++</h1>
+
+        <!-- Ejemplo 1: Hola Mundo -->
+        <div class="card my-3">
+            <div class="card-body">
+                <h2>Ejemplo 1: Hola Mundo</h2>
+                <pre><code class="language-cpp">// Programa en C++ que imprime "Hola Mundo"
+#include &lt;iostream&gt;
+
+int main() {
+    std::cout &lt;&lt; "Hola Mundo" &lt;&lt; std::endl;
+    return 0;
+}</code></pre>
+            </div>
+        </div>
+
+        <!-- Ejemplo 2: Suma de dos números -->
+        <div class="card my-3">
+            <div class="card-body">
+                <h2>Ejemplo 2: Suma de dos números</h2>
+                <pre><code class="language-cpp">// Programa en C++ que suma dos números
+#include &lt;iostream&gt;
+
+int main() {
+    int numero1 = 5;
+    int numero2 = 7;
+    int suma = numero1 + numero2;
+    std::cout &lt;&lt; "La suma de " &lt;&lt; numero1 &lt;&lt; " y " &lt;&lt; numero2 &lt;&lt; " es: " &lt;&lt; suma &lt;&lt; std::endl;
+    return 0;
+}</code></pre>
+            </div>
+        </div>
+
+        <!-- Ejemplo 3: Factorial de un número -->
+        <div class="card my-3">
+            <div class="card-body">
+                <h2>Ejemplo 3: Factorial de un número</h2>
+                <pre><code class="language-cpp">// Programa en C++ que calcula el factorial de un número
+#include &lt;iostream&gt;
+
+int main() {
+    int numero;
+    std::cout &lt;&lt; "Ingrese un número: ";
+    std::cin &gt;&gt; numero;
+    int factorial = 1;
+    for(int i = 1; i &lt;= numero; ++i) {
+        factorial *= i;
+    }
+    std::cout &lt;&lt; "El factorial de " &lt;&lt; numero &lt;&lt; " es: " &lt;&lt; factorial &lt;&lt; std::endl;
+    return 0;
+}</code></pre>
+            </div>
+        </div>
+
+        <!-- Ejemplo 4: Números primos -->
+        <div class="card my-3">
+            <div class="card-body">
+                <h2>Ejemplo 4: Números primos</h2>
+                <pre><code class="language-cpp">// Programa en C++ que verifica si un número es primo
+#include &lt;iostream&gt;
+
+bool esPrimo(int numero) {
+    if(numero &lt;= 1) {
+        return false;
+    }
+    for(int i = 2; i &lt;= numero / 2; ++i) {
+        if(numero % i == 0) {
+            return false;
+        }
+    }
+    return true;
+}
+
+int main() {
+    int numero;
+    std::cout &lt;&lt; "Ingrese un número: ";
+    std::cin &gt;&gt; numero;
+    if(esPrimo(numero)) {
+        std::cout &lt;&lt; numero &lt;&lt; " es primo." &lt;&lt; std::endl;
+    } else {
+        std::cout &lt;&lt; numero &lt;&lt; " no es primo." &lt;&lt; std::endl;
+    }
+    return 0;
+}</code></pre>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Prism JS para resaltar la sintaxis de código -->
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.26.0/prism.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.26.0/components/prism-cpp.min.js"></script>
+</body>
+</html>
