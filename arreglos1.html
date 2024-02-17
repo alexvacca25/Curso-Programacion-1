@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arreglos en C++</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Arreglos en C++</h1>
+
+        <!-- Introducción -->
+        <div class="card my-3">
+            <div class="card-body">
+                <h2>Introducción</h2>
+                <p>Los arreglos en C++ son estructuras de datos que permiten almacenar múltiples valores del mismo tipo bajo un solo nombre. Pueden ser unidimensionales (vectores) o multidimensionales (matrices).</p>
+            </div>
+        </div>
+
+        <!-- Arreglos unidimensionales -->
+        <div class="card my-3">
+            <div class="card-body">
+                <h2>Arreglos Unidimensionales</h2>
+                <p>Un arreglo unidimensional es una lista de elementos del mismo tipo almacenados de manera contigua en la memoria.</p>
+                <pre><code class="language-cpp">// Declaración e inicialización de un arreglo unidimensional
+int numeros[5] = {1, 2, 3, 4, 5};</code></pre>
+            </div>
+        </div>
+
+        <!-- Arreglos multidimensionales -->
+        <div class="card my-3">
+            <div class="card-body">
+                <h2>Arreglos Multidimensionales</h2>
+                <p>Un arreglo multidimensional es una colección de arreglos unidimensionales, donde cada arreglo unidimensional representa una fila o una columna de elementos.</p>
+                <pre><code class="language-cpp">// Declaración e inicialización de un arreglo bidimensional
+int matriz[3][3] = {
+    {1, 2, 3},
+    {4, 5, 6},
+    {7, 8, 9}
+};</code></pre>
+            </div>
+        </div>
+
+        <!-- Acceso a elementos -->
+        <div class="card my-3">
+            <div class="card-body">
+                <h2>Acceso a Elementos</h2>
+                <p>Para acceder a un elemento específico de un arreglo, se utiliza el nombre del arreglo seguido de un índice entre corchetes.</p>
+                <pre><code class="language-cpp">// Acceso a un elemento de un arreglo unidimensional
+int valor = numeros[2]; // Accede al tercer elemento del arreglo 'numeros'</code></pre>
+                <pre><code class="language-cpp">// Acceso a un elemento de un arreglo bidimensional
+int elemento = matriz[1][2]; // Accede al elemento en la segunda fila y tercera columna de la matriz</code></pre>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones Recursivas en C++</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Funciones Recursivas en C++</h1>
+
+        <!-- Introducción -->
+        <div class="card my-3">
+            <div class="card-body">
+                <h2>Introducción</h2>
+                <p>Una función recursiva es aquella que se llama a sí misma para resolver un problema. En C++, la recursión es una técnica poderosa que se utiliza para resolver problemas que pueden dividirse en subproblemas más pequeños.</p>
+            </div>
+        </div>
+
+        <!-- Funciones recursivas -->
+        <div class="card my-3">
+            <div class="card-body">
+                <h2>Funciones Recursivas</h2>
+                <p>Una función recursiva consta de dos partes: el caso base y el caso recursivo. El caso base es una condición que detiene la recursión y generalmente devuelve un valor constante o predefinido. El caso recursivo es donde se realiza la llamada recursiva a la misma función con un problema más pequeño.</p>
+                <pre><code class="language-cpp">// Ejemplo de función recursiva para calcular el factorial
+int factorial(int n) {
+    // Caso base: factorial de 0 es 1
+    if (n == 0) {
+        return 1;
+    }
+    // Caso recursivo: n * factorial(n-1)
+    else {
+        return n * factorial(n - 1);
+    }
+}</code></pre>
+            </div>
+        </div>
+
+        <!-- Ejemplo -->
+        <div class="card my-3">
+            <div class="card-body">
+                <h2>Ejemplo</h2>
+                <p>A continuación se muestra un ejemplo completo que utiliza una función recursiva para calcular el factorial de un número.</p>
+                <pre><code class="language-cpp">// Definición de la función recursiva para calcular el factorial
+int factorial(int n) {
+    // Caso base: factorial de 0 es 1
+    if (n == 0) {
+        return 1;
+    }
+    // Caso recursivo: n * factorial(n-1)
+    else {
+        return n * factorial(n - 1);
+    }
+}
+
+int main() {
+    int num = 5;
+    int fact = factorial(num);
+    std::cout &lt;&lt; "El factorial de " &lt;&lt; num &lt;&lt; " es: " &lt;&lt; fact &lt;&lt; std::endl;
+    return 0;
+}</code></pre>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

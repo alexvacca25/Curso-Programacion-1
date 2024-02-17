@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vectores y Listas en C++</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Vectores y Listas en C++</h1>
+
+        <!-- Introducción -->
+        <div class="card my-3">
+            <div class="card-body">
+                <h2>Introducción</h2>
+                <p>Los vectores y las listas son estructuras de datos que permiten almacenar colecciones de elementos en C++. Los vectores son arreglos dinámicos, mientras que las listas son contenedores enlazados.</p>
+            </div>
+        </div>
+
+        <!-- Vectores -->
+        <div class="card my-3">
+            <div class="card-body">
+                <h2>Vectores</h2>
+                <p>Un vector es una secuencia ordenada de elementos del mismo tipo, que se almacenan en una memoria contigua.</p>
+                <pre><code class="language-cpp">// Declaración e inicialización de un vector
+#include &lt;vector&gt;
+
+std::vector&lt;int&gt; numeros = {1, 2, 3, 4, 5};</code></pre>
+            </div>
+        </div>
+
+        <!-- Listas -->
+        <div class="card my-3">
+            <div class="card-body">
+                <h2>Listas</h2>
+                <p>Una lista es una colección de elementos, donde cada elemento está vinculado al siguiente mediante punteros.</p>
+                <pre><code class="language-cpp">// Declaración e inicialización de una lista
+#include &lt;list&gt;
+
+std::list&lt;int&gt; numeros = {1, 2, 3, 4, 5};</code></pre>
+            </div>
+        </div>
+
+        <!-- Acceso a elementos -->
+        <div class="card my-3">
+            <div class="card-body">
+                <h2>Acceso a Elementos</h2>
+                <p>Los elementos en un vector y en una lista se pueden acceder utilizando el operador de corchetes [] (para vectores) o iteradores (para listas).</p>
+                <pre><code class="language-cpp">// Acceso a elementos de un vector
+int elemento = numeros[2]; // Accede al tercer elemento del vector 'numeros'</code></pre>
+                <pre><code class="language-cpp">// Acceso a elementos de una lista utilizando iteradores
+std::list&lt;int&gt;::iterator it = numeros.begin();
+std::advance(it, 2); // Avanza el iterador dos posiciones
+int elemento = *it;</code></pre>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

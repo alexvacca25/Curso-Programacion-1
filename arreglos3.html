@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadenas de Caracteres (Strings) en C++</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Cadenas de Caracteres (Strings) en C++</h1>
+
+        <!-- Introducción -->
+        <div class="card my-3">
+            <div class="card-body">
+                <h2>Introducción</h2>
+                <p>Las cadenas de caracteres en C++ se pueden representar utilizando la clase <code>std::string</code> del estándar de la biblioteca estándar de C++. Esta clase proporciona una forma conveniente de manipular cadenas de caracteres.</p>
+            </div>
+        </div>
+
+        <!-- Declaración y inicialización -->
+        <div class="card my-3">
+            <div class="card-body">
+                <h2>Declaración e Inicialización</h2>
+                <p>Las cadenas de caracteres se pueden declarar e inicializar de varias formas en C++.</p>
+                <pre><code class="language-cpp">// Declaración e inicialización de una cadena vacía
+std::string cadenaVacia;
+
+// Declaración e inicialización de una cadena con un valor inicial
+std::string saludo = "¡Hola, mundo!";</code></pre>
+            </div>
+        </div>
+
+        <!-- Acceso a caracteres -->
+        <div class="card my-3">
+            <div class="card-body">
+                <h2>Acceso a Caracteres</h2>
+                <p>Los caracteres individuales en una cadena de caracteres se pueden acceder utilizando el operador de corchetes [] junto con un índice.</p>
+                <pre><code class="language-cpp">// Acceso a caracteres individuales
+char primerCaracter = saludo[0]; // Accede al primer carácter de la cadena 'saludo'</code></pre>
+            </div>
+        </div>
+
+        <!-- Operaciones comunes -->
+        <div class="card my-3">
+            <div class="card-body">
+                <h2>Operaciones Comunes</h2>
+                <p>La clase <code>std::string</code> proporciona numerosas funciones y operadores para realizar operaciones comunes en cadenas de caracteres, como concatenación, búsqueda, inserción, eliminación, etc.</p>
+                <pre><code class="language-cpp">// Concatenación de cadenas
+std::string nombre = "Juan";
+std::string apellido = "Pérez";
+std::string nombreCompleto = nombre + " " + apellido;</code></pre>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

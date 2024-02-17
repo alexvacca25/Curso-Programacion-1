@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paso de Parámetros en C++</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Paso de Parámetros en C++</h1>
+
+        <!-- Introducción -->
+        <div class="card my-3">
+            <div class="card-body">
+                <h2>Introducción</h2>
+                <p>En C++, los parámetros de funciones pueden ser pasados por valor o por referencia. El paso por valor implica que una copia del valor del parámetro se pasa a la función, mientras que el paso por referencia implica pasar una referencia a la variable original.</p>
+            </div>
+        </div>
+
+        <!-- Paso de parámetros por valor -->
+        <div class="card my-3">
+            <div class="card-body">
+                <h2>Paso de Parámetros por Valor</h2>
+                <p>Al pasar un parámetro por valor, se crea una copia del valor original dentro de la función. Cualquier modificación realizada en el parámetro dentro de la función no afectará al valor original fuera de ella.</p>
+                <pre><code class="language-cpp">// Función con parámetro por valor
+void duplicar(int x) {
+    x = x * 2;
+}</code></pre>
+            </div>
+        </div>
+
+        <!-- Paso de parámetros por referencia -->
+        <div class="card my-3">
+            <div class="card-body">
+                <h2>Paso de Parámetros por Referencia</h2>
+                <p>Al pasar un parámetro por referencia, se pasa una referencia (dirección de memoria) al valor original. Cualquier modificación realizada en el parámetro dentro de la función afectará al valor original fuera de ella.</p>
+                <pre><code class="language-cpp">// Función con parámetro por referencia
+void duplicarPorReferencia(int &amp; x) {
+    x = x * 2;
+}</code></pre>
+            </div>
+        </div>
+
+        <!-- Ejemplo -->
+        <div class="card my-3">
+            <div class="card-body">
+                <h2>Ejemplo</h2>
+                <p>A continuación se muestra un ejemplo completo que utiliza tanto el paso de parámetros por valor como por referencia en una función.</p>
+                <pre><code class="language-cpp">// Función con parámetro por valor
+void duplicar(int x) {
+    x = x * 2;
+}
+
+// Función con parámetro por referencia
+void duplicarPorReferencia(int &amp; x) {
+    x = x * 2;
+}
+
+int main() {
+    int num = 5;
+    
+    // Paso por valor
+    duplicar(num);
+    std::cout &lt;&lt; "Duplicar por valor: " &lt;&lt; num &lt;&lt; std::endl; // Imprime 5
+
+    // Paso por referencia
+    duplicarPorReferencia(num);
+    std::cout &lt;&lt; "Duplicar por referencia: " &lt;&lt; num &lt;&lt; std::endl; // Imprime 10
+
+    return 0;
+}</code></pre>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

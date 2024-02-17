@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parámetros y Argumentos en C++</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Parámetros y Argumentos en C++</h1>
+
+        <!-- Introducción -->
+        <div class="card my-3">
+            <div class="card-body">
+                <h2>Introducción</h2>
+                <p>En C++, los parámetros son variables que se utilizan para pasar información a una función. Los argumentos son los valores reales que se pasan a esos parámetros cuando se llama a la función.</p>
+            </div>
+        </div>
+
+        <!-- Parámetros de funciones -->
+        <div class="card my-3">
+            <div class="card-body">
+                <h2>Parámetros de Funciones</h2>
+                <p>Los parámetros de una función se definen entre paréntesis en la declaración y definición de la función. Estos parámetros actúan como variables locales dentro de la función.</p>
+                <pre><code class="language-cpp">// Declaración de la función con parámetros
+void saludar(std::string nombre);
+
+// Definición de la función con parámetros
+void saludar(std::string nombre) {
+    std::cout &lt;&lt; "¡Hola, " &lt;&lt; nombre &lt;&lt; "!" &lt;&lt; std::endl;
+}</code></pre>
+            </div>
+        </div>
+
+        <!-- Argumentos de funciones -->
+        <div class="card my-3">
+            <div class="card-body">
+                <h2>Argumentos de Funciones</h2>
+                <p>Los argumentos de una función son los valores reales que se pasan a los parámetros cuando se llama a la función. Estos valores pueden ser constantes, variables o expresiones.</p>
+                <pre><code class="language-cpp">// Llamada a la función con argumentos
+saludar("Juan"); // "Juan" es el argumento que se pasa al parámetro 'nombre'
+</code></pre>
+            </div>
+        </div>
+
+        <!-- Ejemplo -->
+        <div class="card my-3">
+            <div class="card-body">
+                <h2>Ejemplo</h2>
+                <p>A continuación se muestra un ejemplo completo que utiliza parámetros y argumentos en una función para sumar dos números.</p>
+                <pre><code class="language-cpp">// Declaración de la función
+int sumar(int a, int b);
+
+int main() {
+    int resultado = sumar(5, 3); // Llamada a la función con argumentos
+    std::cout &lt;&lt; "La suma es: " &lt;&lt; resultado &lt;&lt; std::endl;
+    return 0;
+}
+
+// Definición de la función
+int sumar(int a, int b) {
+    return a + b;
+}
+</code></pre>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

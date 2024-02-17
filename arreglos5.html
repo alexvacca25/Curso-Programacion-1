@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios Prácticos sobre Vectores y Listas en C++</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Ejercicios Prácticos sobre Vectores y Listas en C++</h1>
+
+        <!-- Ejercicio 1 -->
+        <div class="card my-3">
+            <div class="card-body">
+                <h2>Ejercicio 1: Suma de Elementos</h2>
+                <p>Escribe un programa que calcule la suma de todos los elementos de un vector de enteros.</p>
+                <pre><code class="language-cpp">// Ejercicio 1: Suma de Elementos
+#include &lt;iostream&gt;
+#include &lt;vector&gt;
+
+int main() {
+    std::vector&lt;int&gt; numeros = {1, 2, 3, 4, 5};
+    int suma = 0;
+
+    for (int num : numeros) {
+        suma += num;
+    }
+
+    std::cout &lt;&lt; "La suma de los elementos es: " &lt;&lt; suma &lt;&lt; std::endl;
+
+    return 0;
+}</code></pre>
+            </div>
+        </div>
+
+        <!-- Ejercicio 2 -->
+        <div class="card my-3">
+            <div class="card-body">
+                <h2>Ejercicio 2: Eliminación de Elementos Pares</h2>
+                <p>Escribe un programa que elimine todos los elementos pares de un vector de enteros.</p>
+                <pre><code class="language-cpp">// Ejercicio 2: Eliminación de Elementos Pares
+#include &lt;iostream&gt;
+#include &lt;vector&gt;
+#include &lt;algorithm&gt;
+
+int main() {
+    std::vector&lt;int&gt; numeros = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+
+    // Eliminar elementos pares
+    numeros.erase(std::remove_if(numeros.begin(), numeros.end(), [](int num){ return num % 2 == 0; }), numeros.end());
+
+    // Mostrar el vector resultante
+    for (int num : numeros) {
+        std::cout &lt;&lt; num &lt;&lt; " ";
+    }
+    std::cout &lt;&lt; std::endl;
+
+    return 0;
+}</code></pre>
+            </div>
+        </div>
+
+        <!-- Ejercicio 3 -->
+        <div class="card my-3">
+            <div class="card-body">
+                <h2>Ejercicio 3: Ordenar una Lista de Números</h2>
+                <p>Escribe un programa que ordene una lista de números en orden ascendente.</p>
+                <pre><code class="language-cpp">// Ejercicio 3: Ordenar una Lista de Números
+#include &lt;iostream&gt;
+#include &lt;vector&gt;
+#include &lt;algorithm&gt;
+
+int main() {
+    std::vector&lt;int&gt; numeros = {5, 3, 8, 1, 2, 7};
+
+    // Ordenar los números
+    std::sort(numeros.begin(), numeros.end());
+
+    // Mostrar el vector ordenado
+    for (int num : numeros) {
+        std::cout &lt;&lt; num &lt;&lt; " ";
+    }
+    std::cout &lt;&lt; std::endl;
+
+    return 0;
+}</code></pre>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

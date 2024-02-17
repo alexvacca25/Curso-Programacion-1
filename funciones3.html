@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retorno de Valores en C++</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Retorno de Valores en C++</h1>
+
+        <!-- Introducción -->
+        <div class="card my-3">
+            <div class="card-body">
+                <h2>Introducción</h2>
+                <p>En C++, el retorno de valores se refiere a devolver un valor específico de una función al lugar donde se llamó. Este valor puede ser de cualquier tipo de datos, como int, float, double, etc.</p>
+            </div>
+        </div>
+
+        <!-- Retorno de valores en funciones -->
+        <div class="card my-3">
+            <div class="card-body">
+                <h2>Retorno de Valores en Funciones</h2>
+                <p>Para devolver un valor desde una función, se utiliza la palabra clave <code>return</code>, seguida del valor que se desea devolver. El tipo de dato del valor devuelto debe coincidir con el tipo de dato especificado en la declaración de la función.</p>
+                <pre><code class="language-cpp">// Declaración de la función
+int cuadrado(int x);
+
+// Definición de la función
+int cuadrado(int x) {
+    return x * x;
+}</code></pre>
+            </div>
+        </div>
+
+        <!-- Uso del valor retornado -->
+        <div class="card my-3">
+            <div class="card-body">
+                <h2>Uso del Valor Retornado</h2>
+                <p>El valor retornado por una función puede ser asignado a una variable, utilizado en una expresión o simplemente ignorado, dependiendo de los requisitos del programa.</p>
+                <pre><code class="language-cpp">// Llamada a la función y uso del valor retornado
+int resultado = cuadrado(5); // El valor retornado por la función se asigna a la variable 'resultado'
+std::cout &lt;&lt; "El cuadrado de 5 es: " &lt;&lt; resultado &lt;&lt; std::endl;</code></pre>
+            </div>
+        </div>
+
+        <!-- Ejemplo -->
+        <div class="card my-3">
+            <div class="card-body">
+                <h2>Ejemplo</h2>
+                <p>A continuación se muestra un ejemplo completo que utiliza el retorno de valores en una función para calcular el área de un círculo.</p>
+                <pre><code class="language-cpp">// Declaración de la función
+double calcularAreaCirculo(double radio);
+
+int main() {
+    double radio = 5.0;
+    double area = calcularAreaCirculo(radio);
+    std::cout &lt;&lt; "El área del círculo con radio " &lt;&lt; radio &lt;&lt; " es: " &lt;&lt; area &lt;&lt; std::endl;
+    return 0;
+}
+
+// Definición de la función
+double calcularAreaCirculo(double radio) {
+    return 3.14159 * radio * radio;
+}</code></pre>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
